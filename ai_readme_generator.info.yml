@@ -1,0 +1,6 @@
+name: 'AI Readme Generator'
+type: module
+description: 'Generate README.md files for Drupal modules using AI.'
+core_version_requirement: ^8 || ^9 || ^10 || ^11
+package: Custom
+configure: ai_readme_generator.config_form

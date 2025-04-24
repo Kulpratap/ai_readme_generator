@@ -1,0 +1,30 @@
+{
+    "name": "drupal/ai_readme_generator",
+    "description": "Drupal module that integrates with the AI Readme Generator package to auto-generate README.md files for other Drupal modules.",
+    "type": "p",
+    "autoload": {
+        "psr-4": {
+            "Innoraft\\ReadmeGenerator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kul Pratap Singh",
+            "email": "kulpratap98@gmail.com"
+        },
+        {
+            "name": "Arun Sahijpal",
+            "email": "arunsahijpal111@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "symfony/console": "^7.2",
+        "symfony/yaml": "^7.2",
+        "openai-php/client": "^0.10.3",
+        "symfony/http-client": "^7.2",
+        "nyholm/psr7": "^1.8",
+        "guzzlehttp/guzzle": "^7.9",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

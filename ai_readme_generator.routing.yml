@@ -1,0 +1,15 @@
+ai_readme_generator.config_form:
+  path: '/admin/config/ai-readme-generator'
+  defaults:
+    _form: '\Drupal\ai_readme_generator\Form\AIConfigForm'
+    _title: 'AI Integration Configuration for README.md generator'
+  requirements:
+    _permission: 'administer site configuration'
+
+ai_readme_generator.generate_readme_form:
+  path: '/admin/config/ai-readme-generator/generate-readme'
+  defaults:
+    _form: '\Drupal\ai_readme_generator\Form\GenerateReadmeForm'
+    _title: 'Generate README.md'
+  requirements:
+    _permission: 'administer site configuration'

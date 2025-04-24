@@ -1,0 +1,13 @@
+ai_readme_generator.config_form:
+  title: 'AI Integration Settings for README.md generator'
+  description: 'Configure API settings for AI README generation.'
+  parent: system.admin_config_development
+  route_name: ai_readme_generator.config_form
+  weight: 1
+
+ai_readme_generator.generate_readme_form:
+  title: 'Generate README.md'
+  description: 'Generate a README.md file using AI for any module.'
+  parent: system.admin_config_development
+  route_name: ai_readme_generator.generate_readme_form
+  weight: 2

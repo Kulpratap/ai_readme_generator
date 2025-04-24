@@ -1,0 +1,6 @@
+services:
+  ai_readme_generator.commands:
+    class: Drupal\ai_readme_generator\Commands\ReadmeGeneratorCommands
+    arguments: ['@module_handler', '@config.factory']
+    tags:
+      - { name: drush.command }
