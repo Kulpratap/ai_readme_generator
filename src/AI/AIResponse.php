@@ -69,6 +69,7 @@ class AIResponse {
   - The output should START directly after your response begins.
   - Do NOT include the "CONTENTS OF THIS FILE" section — it will be added manually.
   - Follow the format for sections like Introduction, Requirements, etc.
+  - After headings of section leave one line.
   # [Module Name]
   
   ## Introduction
