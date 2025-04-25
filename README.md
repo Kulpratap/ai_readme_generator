@@ -36,6 +36,5 @@ To configure the module after enabling it, follow the steps below:
 
 ## Maintainers
 
-- Vivek Panicker - [vivek panicker](https://drupal.org/u/vivek-panicker)
 - Kul Pratap Singh - [kul.pratap](https://drupal.org/u/kulpratap)
 - Arun Sahijpal - [arunsahijpal](https://drupal.org/u/arunsahijpal)
