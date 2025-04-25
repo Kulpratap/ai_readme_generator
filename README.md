@@ -35,6 +35,6 @@ To configure the module after enabling it, follow the steps below:
 - You can also generate README.md by using drush command: "drush readme-generator module_machine_name".  
 
 ## Maintainers
-
+- Vivek Panicker- [vivek panicker](https://drupal.org/u/vivek-panicker)
 - Kul Pratap Singh - [kul.pratap](https://drupal.org/u/kulpratap)
 - Arun Sahijpal - [arunsahijpal](https://drupal.org/u/arunsahijpal)
