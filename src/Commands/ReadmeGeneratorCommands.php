@@ -6,8 +6,8 @@ use Drush\Attributes as CLI;
 use Drush\Commands\DrushCommands;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Config\ConfigFactoryInterface;
-use Drupal\ai_readme_generator\Scanner\CodebaseScanner;
-use Drupal\ai_readme_generator\AI\AIResponse;
+use Innoraft\ReadmeGenerator\Scanner\CodebaseScanner;
+use Innoraft\ReadmeGenerator\AI\AIResponse;
 
 /**
  * Defines Drush commands for the AI Readme Generator module.

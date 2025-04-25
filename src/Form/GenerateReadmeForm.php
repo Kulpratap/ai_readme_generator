@@ -7,12 +7,12 @@ use Drupal\Core\Extension\InfoParserInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\ai_readme_generator\Scanner\CodebaseScanner;
-use Drupal\ai_readme_generator\AI\AIResponse;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Messenger\MessengerInterface;
 use Drupal\Core\Extension\ModuleExtensionList;
+use Innoraft\ReadmeGenerator\Scanner\CodebaseScanner;
+use Innoraft\ReadmeGenerator\AI\AIResponse;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Class GenerateReadmeForm.

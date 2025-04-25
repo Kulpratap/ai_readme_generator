@@ -52,13 +52,13 @@ class AIConfigForm extends ConfigFormBase {
           'gpt-3.5-turbo' => 'GPT-3.5 Turbo',
           'gpt-4' => 'GPT-4',
         ],
-        'groq' => [
-          'label' => 'Groq',
-          'base_uri' => 'https://api.groq.com/',
-          'chat_endpoint' => 'openai/v1/chat/completions',
-          'models' => [
-            'llama3-8b-8192' => 'llama3-8b-8192',
-          ],
+      ],
+      'groq' => [
+        'label' => 'Groq',
+        'base_uri' => 'https://api.groq.com/',
+        'chat_endpoint' => 'openai/v1/chat/completions',
+        'models' => [
+          'llama3-8b-8192' => 'llama3-8b-8192',
         ],
       ],
     ];
