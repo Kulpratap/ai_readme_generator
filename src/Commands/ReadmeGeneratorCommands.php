@@ -48,21 +48,40 @@ final class ReadmeGeneratorCommands extends DrushCommands {
    * @param string $module
    *   The machine name of the module.
    */
-  #[CLI\Command(name: 'readme-generator', description: 'Generate README.md file for a module using AI')]
+  #[CLI\Command(name: 'readme-generate', description: 'Generate README.md file for a module using AI')]
   #[CLI\Argument(name: 'module', description: 'The machine name of the module')]
   public function generate(string $module): void {
-    $module_object = $this->moduleHandler->getModule($module);
+    $possible_paths = [
+      'modules/custom/' . $module,
+      'modules/contrib/' . $module,
+    ];
 
-    if (!$module_object) {
-      $this->output()->writeln("❌ Module '$module' not found.");
+    $module_path = NULL;
+
+    foreach ($possible_paths as $path) {
+      if (is_dir($path)) {
+        $module_path = $path;
+        break;
+      }
+    }
+
+    if (!$module_path) {
+      $this->output()->writeln("❌ Module '$module' not found in the filesystem (modules/custom or modules/contrib).");
       return;
     }
 
-    $module_path = $module_object->getPath();
     $scanner = new CodebaseScanner($module_path);
     $moduleData = $scanner->scan();
 
     $config = $this->configFactory->get('ai_readme_generator.settings')->get();
+    $apiKey = $config['api_key'] ?? NULL;
+    $chatEndpoint = $config['chat_endpoint'] ?? NULL;
+    $model = $config['model'] ?? NULL;
+
+    if (empty($apiKey) || empty($chatEndpoint) || empty($model)) {
+      $this->output()->writeln('<error>Please fill the AI configuration form first!</error>');
+      return;
+    }
     $ai = new AIResponse($config);
     $summary = $ai->summarizeArray($moduleData);
 

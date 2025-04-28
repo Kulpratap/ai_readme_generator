@@ -19,7 +19,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "innoraft/readme-generator": "^1.0",
+        "innoraft/ai-readme-generator": "^1.1.0",
         "symfony/console": "^7.2",
         "symfony/yaml": "^7.2",
         "openai-php/client": "^0.10.3",

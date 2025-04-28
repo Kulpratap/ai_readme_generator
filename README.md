@@ -32,7 +32,7 @@ To configure the module after enabling it, follow the steps below:
 - Navigate to the module configuration page.
 - In the AI Configuration Form, choose AI provider, fill API Key and select module
 - In the Generate Readme Form, specify the modules for which README.md files are to be generated.
-- You can also generate README.md by using drush command: "drush readme-generator module_machine_name".  
+- You can also generate README.md by using drush command: "drush readme-generate module_machine_name".  
 
 ## Maintainers
 
