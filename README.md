@@ -11,7 +11,7 @@ CONTENTS OF THIS FILE
 
 ## Introduction
 
-The AI Readme Generator is a Drupal module that uses Artificial Intelligence to generate README.md files for Drupal modules. With an ability to recognize code structure, it simplifies the often time-consuming task of documentation by auto-generating readable, comprehensive files.
+The AI Readme Generator is a Drupal module that uses Artificial Intelligence to generate README.md files for Drupal modules. With an ability to recognize code structure, it simplifies the often time-consuming task of documentation by auto-generating readable, comprehensive README.md
 
 ## Requirements
 
